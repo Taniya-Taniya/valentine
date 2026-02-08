@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #ffe6f2;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px;
+    }
+
+    .heart {
+      font-size: 90px;
+      margin: 20px 0;
+      animation: beat 1.2s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes beat {
+      0%   { transform: scale(1); }
+      30%  { transform: scale(1.2); }
+      60%  { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+
+    button {
+      background-color: #ff6699;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    img {
+      width: 70%;
+      border-radius: 20px;
+      margin-top: 15px;
+    }
+
+    .hint {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+  <script>
+    const PASSWORD = "HubbyJi"; // change this
+
+    const userInput = prompt("Enter the secret password ❤️");
+
+    if (userInput === PASSWORD) {
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.style.display = "block"; // UNLOCK
+      });
+    } else {
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.innerHTML = `
+          <div style="padding:40px; text-align:center;">
+            <h2>Sorry 💕</h2>
+            <p>This page is private.</p>
+          </div>
+        `;
+        document.body.style.display = "block";
+      });
+    }
+  </script>
+</head>
+
+<body>
+  
+
+
+  <h1>Mere Ladoo Ji ❤️</h1>
+  <p>I made something small… just for you.</p>
+
+  <!-- TAPPING HEART -->
+  <div class="heart" onclick="vibrateHeart()">❤️</div>
+ 
+  
+
+  <br>
+  <button onclick="location.href='page2.html'">Next ➜</button>
+
+  <script>
+    function vibrateHeart() {
+      if (navigator.vibrate) {
+        // heartbeat-like vibration
+        navigator.vibrate([200, 100, 200, 600, 200]);
+      }
+    }
+  </script>
+
+</body>
+</html>
