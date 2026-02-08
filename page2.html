@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine 💗</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#ff8fab, #ffc2d1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card {
+      background: #fff;
+      width: 85%;
+      max-width: 340px;
+      border-radius: 25px;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 70%;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #ff4d6d;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    button {
+      flex: 1;
+      border: none;
+      padding: 12px 0;
+      border-radius: 30px;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: #ff4d6d;
+    }
+
+    .no {
+      background: #ff758f;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <!-- Replace this image with your cute image or GIF -->
+    <img src="cute-couple.gif" alt="Cute Couple">
+
+    <h2>Will you be my Valentine? 💌</h2>
+    <div class="subtitle">Think carefully 🥺</div>
+
+    <div class="buttons">
+      <button class="yes" onclick="location.href='page3.html'">Yes 💖</button>
+    </div>
+    <br>
+    <div class="subtitle">Sry No option aapke liye ni h meri jaan💌</div>
+  </div>
+
+  <script>
+    function noClicked() {
+      alert("Are you sure? 🥺💔");
+    }
+  </script>
+
+</body>
+</html>
